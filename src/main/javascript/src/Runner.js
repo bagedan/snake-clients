@@ -27,12 +27,12 @@ const log = function(string) {
 };
 
 // to use for local server
-const server = '127.0.0.1:8080';
+const server = '10.22.19.144:8080';
 
-const userName = 'js@gmail.com';
+const userName = 'David_Farkas@epam.com';
 
 const processBoard = function(boardString) {
-    log(boardString);
+    //log(boardString);
     const board = new Board(boardString);
 
     let logMessage = board + "\n\n";
@@ -40,7 +40,7 @@ const processBoard = function(boardString) {
 	logMessage += "Answer: " + answer + "\n";
     logMessage += "-----------------------------------\n";
 	
-	log(logMessage);
+	//log(logMessage);
 
     return answer;
 };
